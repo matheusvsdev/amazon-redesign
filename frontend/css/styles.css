@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f7;
+}
+
+section {
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  background-color: #131921;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  width: 100px;
+  height: auto;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden; /* Remove bordas extras */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Leve sombra */
+  flex-grow: 1; /* Expande para ocupar mais espaço */
+  max-width: 600px; /* Limita o tamanho para não ficar exagerado */
+}
+
+.category-select {
+  padding: 0.2rem;
+  border: none;
+  background: transparent;
+  font-size: 0.8rem;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px;
+  border: none;
+  background-color: #fbaf00; /* Fundo da lupa */
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button i {
+  color: #131921; /* Ícone da lupa */
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login a, i {
+  color: #ffffff;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.login i {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #fbaf00;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232f3e;
+}
+
+.all-categories {
+  cursor: pointer;
+}
+
+.navbar span, i {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.navbar i {
+  color: #fb9200;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  font-size: 0.9rem;
+  color: aliceblue;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fbaf00;
+  transition: width 0.4s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.watch-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.watch-now h3 {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.watch-now a {
+  background-color: #fbaf00;
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #131921;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+.watch-now a:hover {
+  background-color: #fb9200;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.movies {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  white-space: nowrap;
+  background-color: #cdcdcd;
+  padding: 1rem;
+}
+
+.movies-content {
+  display: flex;
+  justify-content: flex-start; /* Mantém os filmes alinhados ao início */
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.scroll-left,
+.scroll-right {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajusta ao meio */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.4s ease-in-out;
+}
+
+.scroll-left {
+  left: 10px; /* Fixa à esquerda */
+}
+
+.scroll-right {
+  right: 10px; /* Fixa à direita */
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+  background-color: #000000;
+}
+
+.moviesList {
+  max-width: 200px;
+  min-height: 250px;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #ff0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 150px;
+  height: 200px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.titleDescription {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem 0;
+  gap: 0.5rem;
+  min-height: 80px;
+}
+
+.moviesList h2,
+.moviesList p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Máximo de 2 linhas */
+  -webkit-box-orient: vertical;
+
+  line-clamp: 2; /* Propriedade padrão (pode não funcionar em todos os navegadores) */
+  box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  text-align: center;
+}
+
+.moviesList h2 {
+  font-size: 0.9rem;
+}
+
+.moviesList p {
+  font-size: 0.7rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.btnPlus {
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
+.fa-bookmark {
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #000000;
+  transition: 0.4s ease-in-out;
+}
+
+.fa-bookmark:hover {
+  color: #fecb00;
+}
+
+.btnPlus,
+.fa-bookmark {
+  flex: none;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnPlus::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.btnPlus:hover::before {
+  width: 100%; /* Faz o efeito se expandir da esquerda para a direita */
+}
+
+.btnPlus {
+  position: relative;
+  z-index: 1;
+  transition: color 0.4s ease-in-out;
+}
+
+.btnPlus:hover {
+  color: #000000;
+}
