@@ -1,0 +1,12 @@
+# Arquivo do macOS
+.DS_Store
+
+# Dependências do Node.js
+backend/node_modules/
+  
+# Cache do npm e Yarn
+.npm
+.yarn
+
+# Build e output
+backend/dist/

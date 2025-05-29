@@ -47,7 +47,7 @@
     </header>
     <nav class="navbar">
       <div class="all-categories">
-        <span>
+        <span class="btn-category">
           <i class="fa-solid fa-bars"></i>
           Todos
         </span>
@@ -80,22 +80,433 @@
         <a href="#">Assista agora</a>
       </div>
     </nav>
-    <!--
-    <h1>Filmes</h1>
-    <section class="movies">
+
+    <div id="modal" class="modal">
+      <div class="section-category">
+        <h3>Destaques</h3>
+        <ul class="category-list">
+          <li>
+            <a href="#">Mais Vendidos</a>
+          </li>
+          <li>
+            <a href="#">Novidades na Amazon</a>
+          </li>
+          <li>
+            <a href="#">Produtos em alta</a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-category">
+        <h3>Conteúdo digital e dispositivos</h3>
+        <ul class="category-list">
+          <li>
+            <a href="#">Amazon Fire TV</a>
+          </li>
+          <li>
+            <a href="#">Amazon Music</a>
+          </li>
+          <li>
+            <a href="#">Prime Video</a>
+          </li>
+          <li>
+            <a href="#">Aplicativos Amazon</a>
+          </li>
+          <li>
+            <a href="#">Dispositivos Kindle e eBooks</a>
+          </li>
+          <li>
+            <a href="#">Echo e Alexa</a>
+          </li>
+          <li>
+            <a href="#">Audiolivros Audible</a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-category">
+        <h3>Comprar por categoria</h3>
+        <ul class="category-list">
+          <li>
+            <a href="#">Alimentos e Bebidas</a>
+          </li>
+          <li>
+            <a href="#">Automotivo</a>
+          </li>
+          <li>
+            <a href="#">Bebês</a>
+          </li>
+          <li>
+            <a href="#">Beleza e Cuidados Pessoais</a>
+          </li>
+          <li>
+            <a href="#">Ver tudo</a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-category">
+        <h3>Programas e recursos</h3>
+        <ul class="category-list">
+          <li>
+            <a href="#">Amazon Prime</a>
+          </li>
+          <li>
+            <a href="#">Compras Internacionais</a>
+          </li>
+          <li>
+            <a href="#">Dicas de Presentes</a>
+          </li>
+          <li>
+            <a href="#">Venda na Amazon</a>
+          </li>
+          <li>
+            <a href="#">Ver tudo</a>
+          </li>
+        </ul>
+      </div>
+      <div class="section-category">
+        <h3>Ajuda e configurações</h3>
+        <ul class="category-list">
+          <li>
+            <a href="#">Sua conta</a>
+          </li>
+          <li>
+            <a href="#">Ajuda</a>
+          </li>
+          <li>
+            <a href="#">Faça seu login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="banners">
+      <img src="img/banner-resgate.jpg" alt="Banner Resgate Implacável" />
+    </section>
+    <section class="offers-amazon">
+      <div class="offer">
+        <a href="#">
+          <img src="img/oferta.jpg" alt="40% de Desconto" />
+        </a>
+      </div>
+    </section>
+    <section class="categories-az">
+      <div class="title-section">
+        <h2>Navegue pelas categorias de A a Z</h2>
+      </div>
       <button class="scroll-left">
         <i class="fa-solid fa-arrow-left"></i>
       </button>
 
-      <div class="movies-content">
-        Aqui os filmes serão adicionados dinamicamente
+      <div class="categories-content">
+        <!-- Aqui as categorias serão adicionadas dinamicamente -->
       </div>
 
       <button class="scroll-right">
         <i class="fa-solid fa-arrow-right"></i>
       </button>
     </section>
-    -->
+    <section class="amazon-products">
+      <div class="title-section">
+        <h2>Mais Vendidos em Dispositivos Amazon e Acessórios</h2>
+      </div>
+      <div class="amazon-content">
+        <!-- Aqui os produtos Amazon serão adicionadas dinamicamente -->
+      </div>
+    </section>
+    <section class="various-products">
+      <div class="various-content">
+        <div class="all-house">
+          <h2>Casa e Decoração pra você</h2>
+          <div class="various-image">
+            <img
+              src="https://m.media-amazon.com/images/I/51fiPDwZhmL._SY320_.jpg"
+              alt=""
+            />
+          </div>
+          <h3>Tudo em Casa</h3>
+          <div class="categories-house">
+            <div class="house-itens">
+              <div class="itens-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/31JGhcT+e6L._SY150_.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>Aspiradores</h3>
+            </div>
+            <div class="house-itens">
+              <div class="itens-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/31R3WVjZGyL._SY150_.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>Enxoval</h3>
+            </div>
+            <div class="house-itens">
+              <div class="itens-image">
+                <img
+                  src="https://m.media-amazon.com/images/I/41FBGywh8aL._SY150_.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>Organização</h3>
+            </div>
+          </div>
+        </div>
+
+        <a href="#">Veja Casa e Decoração</a>
+      </div>
+      <div class="various-content">
+        <div class="all-house">
+          <h2>Livros mais vendidos</h2>
+          <div class="various-image">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/32/kindle/email/2025/03_Marco/cards/758x608_Livros_Mais_Vendidos_desk._SY608_CB545731324_.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <a href="#">Veja mais em Livros</a>
+      </div>
+      <div class="various-content">
+        <div class="all-house">
+          <h2>Novidades em Kits de Produto</h2>
+          <div class="various-image">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/32/br-consumables/XCM_CUTTLE_1706609_3680342_758x608_2X_pt_BR._SY608_CB579854021_.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <a href="#">Veja mais em Kits de Produtos</a>
+      </div>
+    </section>
+    <section class="amazon-products">
+      <div class="title-section">
+        <h2>Mais Vendidos em Games e Consoles</h2>
+      </div>
+      <div class="amazon-content">
+        <div class="amazonList">
+          <div class="image-amazon">
+            <img
+              src="https://images.tcdn.com.br/img/img_prod/1211726/nintendo_switch_oled_branco_1649_1_37cb56a35c673d3876c223a0aecaae25.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="amazonList">
+          <div class="image-amazon">
+            <img
+              src="https://toyorgame.com.sg/cdn/shop/files/PS5_OCEAN_STE_PKSHT_FT_RGB_BLANK_250218_600x600_crop_center.png?v=1742180745"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="amazonList">
+          <div class="image-amazon">
+            <img
+              src="https://images.tcdn.com.br/img/img_prod/1211726/90_controles_nintendo_switch_joy_con_azul_neon_e_vermelho_neon_1774_1_102e22bf87122354cebb369c445baabe.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="amazonList">
+          <div class="image-amazon">
+            <img
+              src="https://images.tcdn.com.br/img/img_prod/1211726/playstation_5_pro_entrega_a_partir_de_11_11_1828_1_799bb8fd155aa0bffcccb07a0cef7bff.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="amazonList">
+          <div class="image-amazon">
+            <img
+              src="https://shopinfo.vteximg.com.br/arquivos/ids/1699014-1000-1000/1.png?v=638799747989870000"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="various-products">
+      <div class="various-content">
+        <div class="all-house">
+          <div class="title-section">
+            <h2>Seleção geek pra você</h2>
+          </div>
+          <div class="geek-category">
+            <div class="house-itens">
+              <div class="geek-image">
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/G/32/SHOPEX/EvergreenQ2_25/Q2__372x232_DesktopQuadCard_Selecao_geek_pra_voce_1._SY232_CB546709482_.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>Colecionáveis</h3>
+            </div>
+            <div class="house-itens">
+              <div class="geek-image">
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/G/32/SHOPEX/EvergreenQ2_25/Q2__372x232_DesktopQuadCard_Selecao_geek_pra_voce_2._SY232_CB546709482_.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>Video Games</h3>
+            </div>
+            <div class="house-itens">
+              <div class="geek-image">
+                <img
+                  src="https://images.tcdn.com.br/img/img_prod/460977/action_figure_naruto_uzumaki_rikudousennin_modo_action_bandai_1_12_mkp_122849_1_3f770117d39fa77ea8cffa21808a6835.jpeg"
+                  alt=""
+                />
+              </div>
+              <h3>Action Figures</h3>
+            </div>
+            <div class="house-itens">
+              <div class="geek-image">
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/G/32/SHOPEX/EvergreenQ2_25/Q2__372x232_DesktopQuadCard_Selecao_geek_pra_voce_4._SY232_CB547129955_.jpg"
+                  alt=""
+                />
+              </div>
+              <h3>Roupas</h3>
+            </div>
+          </div>
+        </div>
+
+        <a href="#">Veja mais em Brinquedos e Jogos</a>
+      </div>
+      <div class="various-content">
+        <div class="all-house">
+          <div class="title-section">
+            <h2>Brinquedos e Jogos com frete GRÁTIS Prime</h2>
+          </div>
+
+          <div class="various-image">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/32/SHOPEX/EvergreenQ2_25/HIGH_758x608_RBS_Q2_Evergreen_Desktop_SingleImage_OHL_Brinquedos_Jogos._SY608_CB546711494_.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <a href="#">Confira Brinquedos e Jogos</a>
+      </div>
+      <div class="various-content">
+        <div class="all-house">
+          <div class="title-section">
+            <h2>Cozinha: Parcele até 10x sem juros</h2>
+          </div>
+
+          <div class="various-image">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/32/SHOPEX/EvergreenQ2_25/HIGH_758x608_RBS_Q2_Evergreen_Desktop_SingleImage_OHL_Cozinha._SY608_CB546711494_.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <a href="#">Confira Cozinha</a>
+      </div>
+    </section>
+    <section class="recomendations">
+      <div class="login-recomendation">
+        <h2>Veja recomendações personalizadas</h2>
+        <a href="#" class="btnLoginRec">Faça seu login</a>
+        <p>Cliente novo? <a href="#" class="startHere">Comece aqui</a></p>
+      </div>
+    </section>
+    <footer class="footer">
+      <nav class="footer-grid" aria-label="Rodapé com links úteis">
+        <div class="footer-category">
+          <h3>Conheça-nos</h3>
+          <ul class="meet">
+            <li>
+              <a href="#">Sobre a Amazon</a>
+            </li>
+            <li>
+              <a href="#">Informações corporativas</a>
+            </li>
+            <li>
+              <a href="#">Carreiras</a>
+            </li>
+            <li>
+              <a href="#">Comunicados à imprensa</a>
+            </li>
+            <li>
+              <a href="#">Comunidade</a>
+            </li>
+            <li>
+              <a href="#">Acessibilidade</a>
+            </li>
+            <li>
+              <a href="#">Amazon Science</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-category">
+          <h3>Ganhe dinheiro conosco</h3>
+          <ul class="meet">
+            <li>
+              <a href="#">Venda na Amazon</a>
+            </li>
+            <li>
+              <a href="#">Proteja e construa a sua marca</a>
+            </li>
+            <li>
+              <a href="#">Forneça para a Amazon</a>
+            </li>
+            <li>
+              <a href="#">Publique seus livros</a>
+            </li>
+            <li>
+              <a href="#">Seja um associado</a>
+            </li>
+            <li>
+              <a href="#">Anuncie seus produtos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-category">
+          <h3>Pagamento</h3>
+          <ul class="meet">
+            <li>
+              <a href="#">Meios de Pagamento</a>
+            </li>
+            <li>
+              <a href="#">Compre com Pontos</a>
+            </li>
+            <li>
+              <a href="#">Cartão de Crédito</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-category">
+          <h3>Deixe-nos ajudar você</h3>
+          <ul class="meet">
+            <li>
+              <a href="#">Sua conta</a>
+            </li>
+            <li>
+              <a href="#">Frete e prazo de entrega</a>
+            </li>
+            <li>
+              <a href="#">Devoluções e reembolsos</a>
+            </li>
+            <li>
+              <a href="#">Gerencie seu conteúdo e dispositivos</a>
+            </li>
+            <li>
+              <a href="#">Recalls e alertas de segurança do produto</a>
+            </li>
+            <li>
+              <a href="#">Ajuda</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
